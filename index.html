@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav id="nav-bar">
+      <header>C++ Documentation</header>
+      <ul id="list-container">
+        <li><a href="#Introduction">Introduction</a></li>
+        <li><a href="#Variables">Variables</a></li>
+        <li><a href="#Input-and-Output">Input and Output</a></li>
+        <li><a href="#If-Statements">If Statements</a></li>
+        <li><a href="#Loops">Loops</a></li>
+        <li><a href="#Arrays">Arrays</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header>Introduction</header>
+        <p>
+          C++ is a fun language to learn. It has many applications including
+          creating operating systems and games. This is just a basic overview of
+          some fundamental concepts in c++ programming and I hope you will enjoy
+          it!
+        </p>
+      </section>
+      <section id="Variables" class="main-section">
+        <header>Variables</header>
+        <p>
+          Variables are like a bucket that store a certain type of data. There
+          are various types of data than you can store in C++, such as numbers,
+          texts and charcters. To create a variable, you have to first declare
+          the type of data and give it a name. You can also assign a value to
+          variable accorrding to the type of data declared.
+        </p>
+        <p>These are the common variabes found in C++:</p>
+        <ul>
+          <li>string: stores a series of charcters that form text</li>
+          <li>int: stores an integer that has no decimals</li>
+          <li>double: stores a number with decimals</li>
+          <li>boolean: stores the value of either"true" or "false"</li>
+          <li>char: stores a single character such as an alphabet</li>
+        </ul>
+        <p>Here are a few examples of declaring variables in C++</p>
+        <pre>
+          <code>
+    string name="joe";
+
+    int age=35;
+
+    bool single=true;
+          </code>
+        </pre>
+      </section>
+      <section id="Input-and-Output" class="main-section">
+        <header>Input and Output</header>
+        <p>
+          Output is something that will appear on a window once you build and
+          run a program that you've written. To do that you have to type in a
+          keyword called "cout" followed by the things that you wish to output.
+          Input is something the user enters(a data) that will be stored inside
+          a place in the program(such as a variable). To get an input from the
+          user, a keyword "cin" is used followed by the variable where you want
+          to store the data. Also, you might want to output a prompt to tell
+          what the users what kind of information they should enter.
+        </p>
+        <p>Here are examples of cin and cout:</p>
+        <pre>
+          <code>
+    string name; //declare a variable to store a name
+
+    getline(cin, name); //request name from user
+    
+    cout&lt;&lt;"Your name is "&lt;&lt;name;
+          </code>
+        </pre>
+      </section>
+      <section id="If-Statements" class="main-section">
+        <header>If Statements</header>
+        <p>
+          If statements are logical operators that execute a command if the
+          requirements are met. If the requirements are not fulfilled, the
+          commands inside the if statement will not be carried out. To set an if
+          statement the if(){} is used. The () should contain the requirements
+          while the {} should contain the commands.
+        </p>
+        <p>Here's how you set an if statement:</p>
+        <pre>
+          <code>
+    int score=87;
+
+    if(score>=80){
+      cout&lt;&lt;"You got an A!";
+    }
+          </code>
+        </pre>
+      </section>
+      <section id="Loops" class="main-section">
+        <header>Loops</header>
+        <p>
+          There are many types of loops and the one we will be talking about is
+          called the while loop. A while loop is basically a programming
+          structure that will execute a block of code repeatedly if certain
+          conditions are fulfilled(just like if statements). To set up a while
+          loop, you will need to type out while(){} where () contains the
+          condition and {} the code you want the loop to execute. Do make sure
+          that the conditions in the () will not always be true so that you
+          don't end up with an infinite loop.
+        </p>
+
+        <p>
+          Here is an example of a while loop. Take note that at the end of the
+          code the variable is increased so that the condition will eventually
+          false and you will break out of the loop.
+        </p>
+        <pre>
+          <code>
+    int age=1;
+
+    while(age&lt;18){
+      cout&lt;&lt;"You are not an adult yet.";
+      age=age+1; //age is increased by one after each loop
+    }
+          </code>
+        </pre>
+      </section>
+      <section class="main-section" id="Arrays">
+        <header>Arrays</header>
+        <p>
+          Just like variables arrays are able to store data. However, instead of
+          being limited to only storing one data, arrays can store multiple
+          data. To declare an array you have to declare the type of data(such as
+          int) and give it a name. Then, put a [] that contains the number of
+          elements in the array.
+        </p>
+        <p>Here is how you set up an array and access its elements:</p>
+        <pre>
+          <code>
+    int randomNumbers[3]={2,5,9}; //array with three numbers is created
+    
+    cout&lt;&lt;randomNumbers[0]; //2 will be printed out
+    cout&lt;&lt;randomNumbers[1]; //5 will be printed out
+    cout&lt;&lt;randomNumbers[2]; //9 will be printed out
+          </code>
+        </pre>
+      </section>
+    </main>
+    <button><a href="#Introduction">Back To Top</a></button>
+  </body>
+</html>
