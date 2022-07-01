@@ -8,7 +8,7 @@ code {
   display: block;
   background-color: hsl(18, 0%, 87%);
   height: 100%;
-  /* line-height: 20px; */
+  overflow-x:auto;
 }
 
 section {
